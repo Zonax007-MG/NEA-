@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game-Fi</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <!-----------Navigation----------->
+
+        <header>
+            <nav class="navigation">
+                <a href="Game-verse.html" class="active">Home</a>
+                <a href="../Games index/index.html">Games index </a>
+                <a href="#0">User Info</a>
+                <a href="../Support/support.html">Support</a>
+                <button class="btnLogin-popup">Log in</button>
+            </nav>          
+        </header>
+
+        <!-----------Background----------->
+    
+        <section>
+            <img src="img//logo.webp" id="Sword"/>
+            <img src="img/stars.png" id="stars">
+            <img src="img/moon.png" id="moon">
+            <img src="img/front_ground.png" id="front_ground">
+            <h2 id="text">Game-verse</h2>
+            <img src="img/mountains_behind.png" id="mountains_behind">
+
+            <!-----------Log-in----------->
+
+            <div class="wrapper">
+                <span class="icon-close">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+              <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div> 
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="key-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div> 
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="Submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?
+                        <a href="#0" class="register-link">Register</a></p>
+                    </div>
+                </form>
+              </div> 
+    
+            <!-----------Register----------->
+
+              <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div> 
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div> 
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="key-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div> 
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the term & conditions</label>
+                    </div>
+                    <button type="Submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account?
+                        <a href="#0" class="login-link">Login</a></p>
+                    </div>
+                </form>
+              </div> 
+        </section>
+        </div>
+
+        <!-----------Web-Use summary----------->
+
+        <div class="sec">
+            <h2>Welcome to Game-verse</h2>
+            <p>asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd<br><br>
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+                sadadadadadadadad
+                asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd<br><br>
+
+
+            </p> 
+        </div>
+
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+        <script>
+            let stars = document.getElementById('stars')
+            let moon = document.getElementById('moon')
+            let front_ground = document.getElementById('front_ground')
+            let text = document.getElementById('text')
+            let mountains_behind = document.getElementById('mountains_behind')
+
+            window.addEventListener('scroll', function() {
+                let value =window.scrollY;
+                stars.style.left = value * 0.25 +'px'
+                moon.style.top = value * 1.25 +'px'
+                mountains_behind.style.top = value * 0.05 + 'px';
+                front_ground.style.top = value * 0 + 'px';
+                text.style.marginLeft = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
